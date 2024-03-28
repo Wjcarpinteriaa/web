@@ -1,0 +1,90 @@
+.ficha{
+    padding: 30px 0;
+}
+
+.detalless{
+    padding: 30px 0;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.detalless h2{
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+
+}
+
+.detalless p{
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.detalless label{
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+
+.carrito{
+    padding: 30px 0;
+}
+
+.pagos{
+    padding: 30px 0;
+}
+
+.pagos h2{
+    text-align: center;
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.pagos label{
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.pagos button{
+    font-size: 1.5vw;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.personalizar{
+    padding: 30px 0;
+}
+
+.personalizar h2{
+    text-align: center;
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.personalizar label{
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.personalizar button{
+    font-size: 1.5vw;
+    margin-top: 20px;
+    width: 600px;
+}
