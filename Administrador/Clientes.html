@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../iconos/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6adaba3b1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.bootstrap5.css">
+        <!--SOLO PARA GRAFICAS-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <link rel="stylesheet" href="./libs/morris.css">
+        <script src="./libs/morris.min.js" charset="utf-8"></script>
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3><span>Admin</span></h3>
+        </div>
+        
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(img/william.jpg)"></div>
+                <h4>William Alexander Jiménez Bogotá</h4>
+                <small>Administrador</small>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="index.html" class="active">
+                            <span class="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i></span>
+                            <small>Inicio</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="Actualizar.html">
+                            <span class="#"><i class="fa-solid fa-id-card" style="color: #ffffff;"></i></span>
+                            <small>Configuraion Perfil</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="VistaRapida.html">
+                             <span class="#"><i class="fa-solid fa-eye" style="color: #ffffff;"></i></span>
+                             <small>Vista Rapida</small>
+                         </a>
+                     </li>
+                    <li>
+                       <a href="Clientes.html">
+                            <span class="#"><i class="fa-solid fa-users" style="color: #ffffff;"></i></span>
+                            <small>Clientes</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="Carpinteros.html">
+                            <span class="#"><i class="fa-solid fa-screwdriver-wrench" style="color: #ffffff;"></i></span>
+                            <small>Carpinteros</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="NuevoCarpintero.html">
+                             <span class="#"><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i></span>
+                             <small>Nuevo Carpintero</small>
+                         </a>
+                     </li>
+                    <li>
+                       <a href="Ventas.html">
+                            <span class="#"><i class="fa-solid fa-chart-line" style="color: #ffffff;"></i></span>
+                            <small>Ventas</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Chats.html">
+                             <span class="#"><i class="fa-solid fa-message" style="color: #ffffff;"></i></span>
+                             <small>Chats</small>
+                         </a>
+                     </li>
+                    <li>
+                       <a href="Producto.html">
+                            <span class="#"><i class="fa-solid fa-toolbox" style="color: #ffffff;"></i></span>
+                            <small>Producto</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PedirMateria.html">
+                             <span class="#"><i class="fa-solid fa-truck" style="color: #ffffff;"></i></span>
+                             <small>Pedir Material</small>
+                         </a>
+                     </li>
+                     <li>
+                        <a href="Proveedores.html">
+                             <span class="#"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span>
+                             <small>Provedores</small>
+                         </a>
+                     </li>
+                     <li>
+                        <a href="Comentarios.html">
+                             <span class="#"><i class="fa-solid fa-comment-dots" style="color: #ffffff;"></i></span>
+                             <small>Comentarios</small>
+                         </a>
+                     </li>
+                    
+                     <li>
+                        <a href="Envios.html">
+                             <span class="#"><i class="fa-solid fa-clipboard-list" style="color: #ffffff;"></i></span>
+                             <small>Envios</small>
+                         </a>
+                     </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars">WJ CARPINTERIA</span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="">
+                        <span class="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></span>
+                    </label>
+                    
+                    <div class="notify-icon"> 
+                        <span class="#"><i class="fa-regular fa-envelope" style="color: #da1010;"></i></span>
+                       <a href="Error505.html"><span class="notify">4</span></a>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="#"><i class="fa-solid fa-bell" style="color: #FFD43B;"></i></span>
+                       <a href="Error404.html"><span class="notify">3</span></a> 
+                    </div>
+                    
+                    <div class="user">
+                        
+                        
+                        <span class="#"></span>
+                        <a href="../Login.html"><i class="fa-solid fa-right-from-bracket" style="color: #b61111;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+            
+            <div class="page-header">
+                <h1>¡¡Mira quien esta!!</h1>
+                <small>¡¡Bienvenido William!!</small>
+            </div>
+            
+            <div class="page-content">
+            
+                
+                
+                    <div>
+                        <div>
+                            <div>
+                            <h2>Gestion de clientes</h2>
+                            </div>
+                        </div>
+            
+                        <div>
+                            <div>
+                            <!-- Inicio de la tabla -->
+                            <table id="Solicitudes" class="table table-striped" style="width:100%">
+                                <thead>
+                                <tr>
+                                    <th>Nombres</th>
+                                    <th>Rol</th>
+                                    <th>Dirección</th>
+                                    <th>Municipio</th>
+                                    <th>Fecha Solicitud</th>
+                                    <th>Precio Solicitud</th>
+                                    <th>Correo Electrónico</th>
+                                    <th>Elección</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Gabriela Sánchez</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 7 #25-30</td>
+                                    <td>Bogotá</td>
+                                    <td>2023-02-10</td>
+                                    <td>$310,000</td>
+                                    <td>gabriela@example.com</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Lucía Martín</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 22 #35-40</td>
+                                    <td>Armenia</td>
+                                    <td>2023-12-20</td>
+                                    <td>$280,000</td>
+                                    <td>luciam@example.com</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Diego Gómez</td>
+                                    <td>Cliente</td>
+                                    <td>Diagonal 10 #20-25</td>
+                                    <td>Sincelejo</td>
+                                    <td>2024-01-10</td>
+                                    <td>$290,000</td>
+                                    <td>diegog@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Valeria Díaz</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 3 #15-20</td>
+                                    <td>Tunja</td>
+                                    <td>2024-02-15</td>
+                                    <td>$300,000</td>
+                                    <td>valeriad@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>José García</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 8 #20-25</td>
+                                    <td>Ibagué</td>
+                                    <td>2024-03-20</td>
+                                    <td>$310,000</td>
+                                    <td>joseg@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Ana Ruiz</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 18 #25-30</td>
+                                    <td>Neiva</td>
+                                    <td>2024-04-05</td>
+                                    <td>$320,000</td>
+                                    <td>anar@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Mario Sánchez</td>
+                                    <td>Cliente</td>
+                                    <td>Transversal 15 #30-35</td>
+                                    <td>Popayán</td>
+                                    <td>2024-05-18</td>
+                                    <td>$330,000</td>
+                                    <td>marios@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Valentina Torres</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 12 #25-30</td>
+                                    <td>Montería</td>
+                                    <td>2024-06-30</td>
+                                    <td>$340,000</td>
+                                    <td>valentinat@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Andrés Pérez</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 10 #15-20</td>
+                                    <td>Valledupar</td>
+                                    <td>2024-07-22</td>
+                                    <td>$350,000</td>
+                                    <td>andresp@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Sofía Vargas</td>
+                                    <td>Cliente</td>
+                                    <td>Diagonal 7 #20-25</td>
+                                    <td>Riohacha</td>
+                                    <td>2024-08-10</td>
+                                    <td>$360,000</td>
+                                    <td>sofiav@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Carlos García</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 15 #20-25</td>
+                                    <td>Medellín</td>
+                                    <td>2023-03-15</td>
+                                    <td>$290,000</td>
+                                    <td>carlosg@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Isabel Martínez</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 10 #15-20</td>
+                                    <td>Cali</td>
+                                    <td>2023-04-20</td>
+                                    <td>$330,000</td>
+                                    <td>isabelm@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Luisa González</td>
+                                    <td>Cliente</td>
+                                    <td>Transversal 5 #20-25</td>
+                                    <td>Barranquilla</td>
+                                    <td>2023-05-25</td>
+                                    <td>$280,000</td>
+                                    <td>luisag@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>José Pérez</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 12 #10-15</td>
+                                    <td>Cartagena</td>
+                                    <td>2023-06-30</td>
+                                    <td>$320,000</td>
+                                    <td>josep@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Mariana Díaz</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 3 #20-25</td>
+                                    <td>Pereira</td>
+                                    <td>2023-07-05</td>
+                                    <td>$300,000</td>
+                                    <td>marianad@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Diego Ramírez</td>
+                                    <td>Cliente</td>
+                                    <td>Diagonal 10 #15-20</td>
+                                    <td>Bucaramanga</td>
+                                    <td>2023-08-10</td>
+                                    <td>$340,000</td>
+                                    <td>diegor@example.com</td>
+                                        <td>
+                                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ana Martínez</td>
+                                    <td>Cliente</td>
+                                    <td>Transversal 8 #25-30</td>
+                                    <td>Cúcuta</td>
+                                    <td>2023-09-15</td>
+                                    <td>$290,000</td>
+                                    <td>anam@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Carlos López</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 20 #30-35</td>
+                                    <td>Villavicencio</td>
+                                    <td>2023-10-20</td>
+                                    <td>$310,000</td>
+                                    <td>carlosl@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Laura Gutiérrez</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 5 #25-30</td>
+                                    <td>Manizales</td>
+                                    <td>2023-11-25</td>
+                                    <td>$330,000</td>
+                                    <td>laurag@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 7 #45-78</td>
+                                    <td>Bogotá</td>
+                                    <td>2011-04-25</td>
+                                    <td>$320,800</td>
+                                    <td>tiger@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>María Fernández</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 7 #15-25</td>
+                                    <td>Bogotá</td>
+                                    <td>2014-10-08</td>
+                                    <td>$290,000</td>
+                                    <td>mariaf@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Carlos Ramírez</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 12 #35-40</td>
+                                    <td>Medellín</td>
+                                    <td>2013-07-15</td>
+                                    <td>$260,000</td>
+                                    <td>carlosr@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Sofía Martínez</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 5 #10-15</td>
+                                    <td>Cali</td>
+                                    <td>2015-03-20</td>
+                                    <td>$310,000</td>
+                                    <td>sofiam@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Andrés Gómez</td>
+                                    <td>Cliente</td>
+                                    <td>Transversal 8 #20-25</td>
+                                    <td>Barranquilla</td>
+                                    <td>2016-11-12</td>
+                                    <td>$280,000</td>
+                                    <td>andresg@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Valentina López</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 15 #25-30</td>
+                                    <td>Cartagena</td>
+                                    <td>2017-09-05</td>
+                                    <td>$320,000</td>
+                                    <td>valentinal@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Manuel Pérez</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 10 #10-20</td>
+                                    <td>Pereira</td>
+                                    <td>2018-12-18</td>
+                                    <td>$250,000</td>
+                                    <td>manuelp@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Julieta Díaz</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 20 #15-20</td>
+                                    <td>Bucaramanga</td>
+                                    <td>2019-05-30</td>
+                                    <td>$300,000</td>
+                                    <td>julietad@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Andrea Castro</td>
+                                    <td>Cliente</td>
+                                    <td>Diagonal 3 #20-25</td>
+                                    <td>Cúcuta</td>
+                                    <td>2020-08-22</td>
+                                    <td>$270,000</td>
+                                    <td>andreac@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Ricardo Vargas</td>
+                                    <td>Cliente</td>
+                                    <td>Transversal 15 #25-30</td>
+                                    <td>Villavicencio</td>
+                                    <td>2012-06-10</td>
+                                    <td>$280,000</td>
+                                    <td>ricardov@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Laura Martínez</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 18 #30-35</td>
+                                    <td>Manizales</td>
+                                    <td>2011-11-15</td>
+                                    <td>$290,000</td>
+                                    <td>lauram@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Ana Rodríguez</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 7 #15-20</td>
+                                    <td>Bogotá</td>
+                                    <td>2023-03-10</td>
+                                    <td>$320,000</td>
+                                    <td>ana@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>José González</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 10 #25-30</td>
+                                    <td>Medellín</td>
+                                    <td>2023-05-15</td>
+                                    <td>$310,000</td>
+                                    <td>joseg@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Luisa Martínez</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 12 #20-25</td>
+                                    <td>Cali</td>
+                                    <td>2023-06-20</td>
+                                    <td>$330,000</td>
+                                    <td>luisam@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Pedro Sánchez</td>
+                                    <td>Cliente</td>
+                                    <td>Transversal 5 #15-20</td>
+                                    <td>Barranquilla</td>
+                                    <td>2023-08-12</td>
+                                    <td>$340,000</td>
+                                    <td>pedros@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>María García</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 3 #10-15</td>
+                                    <td>Cartagena</td>
+                                    <td>2023-10-05</td>
+                                    <td>$350,000</td>
+                                    <td>mariag@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Andrés Díaz</td>
+                                    <td>Cliente</td>
+                                    <td>Avenida 8 #25-30</td>
+                                    <td>Pereira</td>
+                                    <td>2023-12-18</td>
+                                    <td>$360,000</td>
+                                    <td>andresd@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Sofía Ramírez</td>
+                                    <td>Cliente</td>
+                                    <td>Diagonal 2 #20-25</td>
+                                    <td>Bucaramanga</td>
+                                    <td>2024-02-22</td>
+                                    <td>$370,000</td>
+                                    <td>sofiar@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Juan Castro</td>
+                                    <td>Cliente</td>
+                                    <td>Transversal 10 #25-30</td>
+                                    <td>Cúcuta</td>
+                                    <td>2024-04-15</td>
+                                    <td>$380,000</td>
+                                    <td>juanc@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Valentina Vargas</td>
+                                    <td>Cliente</td>
+                                    <td>Calle 20 #20-25</td>
+                                    <td>Villavicencio</td>
+                                    <td>2024-06-10</td>
+                                    <td>$390,000</td>
+                                    <td>valentinav@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>Luis Hernández</td>
+                                    <td>Cliente</td>
+                                    <td>Carrera 12 #30-35</td>
+                                    <td>Manizales</td>
+                                    <td>2024-08-15</td>
+                                    <td>$400,000</td>
+                                    <td>luish@example.com</td>
+                                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-thumbs-up"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+                                        </div></td>
+                                </tr>
+                                
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                    <th>Nombres</th>
+                                    <th>Rol</th>
+                                    <th>Dirección</th>
+                                    <th>Municipio</th>
+                                    <th>Fecha Solicitud</th>
+                                    <th>Precio Solicitud</th>
+                                    <th>Correo Electrónico</th>
+                                    <th>Teléfono</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <!-- Fin de la tabla -->
+                            
+                        </div>
+                    </div>
+           <!-- script dashboard -->
+                <script src="../js/bootstrap.bundle.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+                <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+            
+                <script>
+                  new DataTable('#Solicitudes');
+                </script>
+                <div class="analytics">
+                    <h1>Generador de Gráficos</h1>
+
+                    <div class="left">
+                        <select name="" id="tipo">
+                            <option value="circular">
+                                Gráfico Circular
+                            </option>
+                            <option value="columna">
+                                Gráfico de Columnas
+                            </option>
+                        </select>
+                        <input type="text" placeholder="Título del Gráfico" id="titulo">
+                        <div class="datos" id="datos">
+                            <div class="dato">
+                                <input type="text" placeholder="Leyenda 1" class="serie">
+                                <input type="text" placeholder="Valor 1" class="valor">
+                            </div>
+                            <div class="dato">
+                                <input type="text" placeholder="Leyenda 2" class="serie">
+                                <input type="text" placeholder="Valor 2" class="valor">
+                            </div>
+                        </div>
+                        <button onclick="agregarDato()" class="agregar"> + </button>
+                        <button onclick="cargarGrafico()" class="crear-grafico">Crear Gráfico</button>
+                    </div>
+                    <div class="right">
+                        <div id="piechart"></div>
+                    </div>
+                
+                
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script src="js/script.js"></script>
+            
+                    
+                 
+
+                    
+
+                   
+
+                    
+
+
+               
+
+                    
+
+                    
+                   
+
+                    
+
+                </div>
+            </div>
+        </main>          
+                
+                
+            
+                    
+           
+    </div>
+</body>
+</html>
