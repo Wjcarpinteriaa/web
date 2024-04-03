@@ -268,3 +268,18 @@ footer{
 .abajo a:hover{
   color: darkgreen !important;
 }
+
+/* flecha volver inicio */
+
+.flecha {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.flecha:hover{
+  background: rgba(0, 0, 0, 0.5);
+}
